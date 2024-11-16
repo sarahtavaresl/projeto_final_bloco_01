@@ -2,6 +2,8 @@ package loja;
 
 import java.util.Scanner;
 
+import Produto.model.Produto;
+
 public class Menu {
 
 	public static void main(String[] args) {
@@ -62,6 +64,8 @@ public class Menu {
 			}
 		}
 	}
+	
+	
 
 	private static void sobre() {
 		System.out.println("\n*********************************************************");
