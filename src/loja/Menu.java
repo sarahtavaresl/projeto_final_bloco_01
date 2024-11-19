@@ -2,11 +2,14 @@ package loja;
 
 import java.util.Scanner;
 
-import Produto.model.Produto;
+import loja.model.Caneta;
 
 public class Menu {
 
 	public static void main(String[] args) {
+
+		Caneta caneta1 = new Caneta("Caneta Esferográfica", "Bic", 1.50);
+		Caneta caneta2 = new Caneta("Caneta Gel", "Stabilo", 3.00);
 
 		Scanner leia = new Scanner(System.in);
 
@@ -20,8 +23,9 @@ public class Menu {
 			System.out.println("            1 - Listar todos os Produtos             ");
 			System.out.println("            2 - Buscar Produto por número            ");
 			System.out.println("            3 - Atualizar Dados do Produto           ");
-			System.out.println("            4 - Carrinho                             ");
-			System.out.println("            5 - Sair                                 ");
+			System.out.println("            4 - Excluir                              ");
+			System.out.println("            5 - Cadastrar                            ");
+			System.out.println("            6 - Sair                                 ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("Entre com a opção desejada:                          ");
@@ -53,19 +57,20 @@ public class Menu {
 				break;
 
 			case 4:
-				System.out.println("Carrinho\n\n");
+				System.out.println("Excluir\n\n");
 
 				break;
 
 			case 5:
+				System.out.println("Cadastrar\n\n");
+
+			case 6:
 				System.out.println("Sair\n\n");
 
 				break;
 			}
 		}
 	}
-	
-	
 
 	private static void sobre() {
 		System.out.println("\n*********************************************************");
