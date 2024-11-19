@@ -4,7 +4,7 @@ import loja.model.Produto;
 
 public interface ProdutoRepository {
 	
-	public interface ContaRepository {
+	
 		
 		public void procurarPorProduto(int numero);
 		public void listarTodos();
@@ -14,7 +14,7 @@ public interface ProdutoRepository {
 		
 		
 		
-	}
+	
 
 		
 		

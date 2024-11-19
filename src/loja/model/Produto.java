@@ -8,7 +8,7 @@ public abstract class Produto {
 	private String tipo;
 
 	public Produto(String nomeProduto, float precoProduto, String marcaProduto, String tipo) {
-		super();
+		
 		this.nomeProduto = nomeProduto;
 		this.marcaProduto = marcaProduto;
 		this.precoProduto = precoProduto;
@@ -70,4 +70,4 @@ public abstract class Produto {
 	}
 
 
-}
+
